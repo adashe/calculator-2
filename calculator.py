@@ -21,15 +21,18 @@ while True:
         var1 = int(input_string_list[1])
         var2 = int(input_string_list[2])
     elif len(input_string_list) == 2:
-        operator = int(input_string_list[0])
+        operator = input_string_list[0]
         var1 = int(input_string_list[1])
     else:
         print('That is not a valid entry.')
 
     # Checks if input is integer
 
-    if type(var1) is not int or type(var2) is not int:
+    if not var1.isdigit() or not var2.isdigit():
         print('That is not a number.')
+
+    # Runs calculations
+    
     else:
         if operator == 'add':
             result = add(var1, var2)
@@ -49,9 +52,9 @@ while True:
         elif operator == 'mod':
             result = mod(var1, var2)
             print(result)
-        elif operator = 'square':
+        elif operator == 'square':
             result = square(var1)
             print(result)
-        elif operator = 'cube':
+        elif operator == 'cube':
             result = cube(var1)
             print(result)
