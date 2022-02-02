@@ -52,9 +52,9 @@ while True:
         elif operator == 'mod':
             result = mod(var1, var2)
             print(result)
-        elif operator == 'square':
-            result = square(var1)
-            print(result)
-        elif operator == 'cube':
-            result = cube(var1)
-            print(result)
+        #elif operator == 'square':
+            #result = square(var1)
+            #print(result)
+        #elif operator == 'cube':
+            #result = cube(var1)
+            #print(result)
