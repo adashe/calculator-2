@@ -28,22 +28,22 @@ while True:
 
     # Checks if input is integer
 
-    if not var1.isdigit() or not var2.isdigit():
+    if type(var1) is not int or type(var2) is not int:
         print('That is not a number.')
 
     # Runs calculations
     
     else:
-        if operator == 'add':
+        if operator == '+':
             result = add(var1, var2)
             print(result)
-        elif operator == 'subtract':
+        elif operator == '-':
             result = subtract(var1, var2)
             print(result)
-        elif operator == 'multiply':
+        elif operator == '*':
             result = multiply(var1, var2)
             print(result)
-        elif operator == 'divide':
+        elif operator == '/':
             result = divide(var1, var2)
             print(result)
         elif operator == 'pow':
@@ -52,9 +52,9 @@ while True:
         elif operator == 'mod':
             result = mod(var1, var2)
             print(result)
-        #elif operator == 'square':
-            #result = square(var1)
-            #print(result)
-        #elif operator == 'cube':
-            #result = cube(var1)
-            #print(result)
+        elif operator == 'square':
+            result = square(var1)
+            print(result)
+        elif operator == 'cube':
+            result = cube(var1)
+            print(result)
